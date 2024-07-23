@@ -1,0 +1,161 @@
+// 1. Define a function called cleanNames that accepts an array of strings containing additional space characters at the beginning and end. The cleanNames() function should use the array map method to return a new array full of trimmed names. For
+
+// example: cleanNames([" avengers", "    captain_america", "ironman    ", "  black panther"J);
+// output ["avengers", "captain_america", "ironman", "black panther"]
+
+{
+    // function cleanNames(str = " "){
+    //     const result = []
+    //     for(let key of str)
+    //     {
+    //         result.push(key.trim())  
+    //     }
+    //     return result
+    // }
+    // console.log(cleanNames([" avengers", "    captain_america", "ironman    ", "  black panther"]));
+  
+
+}
+
+// 3. Alternate positive and negative numbers in the array Given an unsorted array At of N positive and negative numbers. Your task is to create an array of alternate positive and negative numbers without changing the relative order of positive and negative numbers. Note: The Output Array should start with a positive number.
+// Example 1: Input:  N = 9 ,  Arr [] = {9,4,-2,-1,5,0,-5,-3,2}
+// Output 9 -2 4 -1 5 -5 0-3 2
+
+// Example 2, Input: N-10 . Αrr[] =  (-5, -2, 5, 2, 4, 7, 1, 8, 0, -8)
+
+// Output: 5 -5 2 -2 4 -8 7 1 8 0
+
+{
+
+}
+
+{
+  // 4.Write a program to delete a property from a JSON object. Use the same JSON object from the first question. Delete the "age" property from the object. Print the updated object to the console.
+}
+// const data = {
+//   name: "John Doe",
+//   age: 30,
+//   address: {
+//     street: "123 Main St",
+//     city: "Michigan",
+//     state: "CA",
+//     zip: "12345",
+//   },
+// };
+
+//   const {age , ...rest} = data;
+// const deleteAge = (data) => {
+//   const obj = data;
+//   delete obj.age;
+//   return obj;
+// };
+// console.log("Deleted Data : ", deleteAge(data));
+
+// {
+//     // 5. Write a program to check if a JSON object has a specific property. Use the same JSON object from the first question. Check if the object has a "phone" property. Print "true" or "false" to the console.
+// }
+const students = [
+    {
+      id: 1,
+      studentName: "Amit Patel",
+      age: 20,
+      phoneNum: "123-456-7890",
+      email: "mailto:amit.patel@example.com",
+      subjects: ["Math", "Science", "Gujarati"],
+    },
+    {
+      id: 2,
+      studentName: "Nita Shah",
+      age: 22,
+      phoneNum: "987-654-3210",
+      email: "mailto:nita.shah@example.com",
+      subjects: ["English", "History", "Gujarati"],
+    },
+    {
+      id: 3,
+      studentName: "Kiran Desai",
+      age: 21,
+      phoneNum: "456-789-1230",
+      email: "mailto:kiran.desai@example.com",
+      subjects: ["Biology", "Chemistry", "Gujarati"],
+    },
+    {
+      id: 4,
+      studentName: "Rina Joshi",
+      age: 23,
+      phoneNum: "321-654-9870",
+      email: "mailto:rina.joshi@example.com",
+      subjects: ["Physics", "Math", "Gujarati"],
+    },
+    {
+      id: 5,
+      studentName: "Vijay Mehta",
+      age: 19,
+      phoneNum: "654-321-7890",
+      email: "mailto:vijay.mehta@example.com",
+      subjects: ["Computer Science", "Economics", "Gujarati"],
+    },
+    {
+      id: 6,
+      studentName: "Anjali Trivedi",
+      age: 21,
+      phoneNum: "789-123-4560",
+      email: "mailto:anjali.trivedi@example.com",
+      subjects: ["Math", "Gujarati", "Physics"],
+    },
+    {
+      id: 7,
+      studentName: "Rajesh Parmar",
+      age: 22,
+      phoneNum: "654-987-3210",
+      email: "mailto:rajesh.parmar@example.com",
+      subjects: ["History", "Science", "Gujarati"],
+    },
+    {
+      id: 8,
+      studentName: "Pooja Bhatt",
+      age: 20,
+      phoneNum: "321-123-4567",
+      email: "mailto:pooja.bhatt@example.com",
+      subjects: ["Biology", "Math", "Gujarati"],
+    },
+    {
+      id: 9,
+      studentName: "Mehul Gajjar",
+      age: 23,
+      phoneNum: "456-321-7890",
+      email: "mailto:mehul.gajjar@example.com",
+      subjects: ["Chemistry", "Computer Science", "Gujarati"],
+    },
+    {
+      id: 10,
+      studentName: "Snehal Thakkar",
+      age: 19,
+      phoneNum: "789-654-1230",
+      email: "mailto:snehal.thakkar@example.com",
+      subjects: ["Economics", "English", "Gujarati"],
+    },
+  ];
+  
+// function checkPhone(key){
+//     return students.some((student) => student[key])
+// }
+// console.log(checkPhone("id"))
+
+{
+  //   1) Create a function which takes field and value as parameters and return the desired result.
+  // output
+//   function findStudentDetail(key , value)
+//   {
+//     return students.filter(( student) => student[key] === value)
+//   }
+//   console.log(findStudentDetail("age", 22));
+}
+
+//   2) Create a function which create a subject wise student list.
+
+function subjectWiseList(value)
+{
+    return students.filter((student, ...rest) => student.subjects.includes(value)  )
+}
+console.log(subjectWiseList("Math"));
